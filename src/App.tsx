@@ -191,7 +191,7 @@ function App() {
         return alert('No details found');
       }
       const anyFiveIngredients = [];
-      for (let i = 5; i <= 9; i++) {
+      for (let i = 1; i <= 5; i++) {
         const ingredient = response?.data?.meals?.[0][`strIngredient${i}`];
         if (ingredient) {
           anyFiveIngredients.push(ingredient);
